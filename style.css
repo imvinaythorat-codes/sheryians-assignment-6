@@ -1,0 +1,222 @@
+@font-face {
+    font-family: Reckless;
+    src: url(fonts/RecklessCondensedS-TRIAL-Book.woff);
+}
+@font-face {
+    font-family: Roboto-Mono;
+    src: url(fonts/RobotoMono-Regular.ttf);
+}
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+html,
+body {
+ height: 100vh;
+ width: 100%;
+}
+
+main{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #FBF9EB;
+}
+
+nav{
+    width: 100%;
+    background-color: #FFFEFB;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Reckless";
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+nav .nav-part-1{
+    display: flex;
+    gap: 1rem;
+    width: 5%;
+    font-size: 1.3rem;
+}
+
+nav i{
+    font-size: 1.5rem;
+    width:33%;
+}
+
+.nav-part-1 h3{
+    font-weight: 400;
+    display: none;
+}
+
+nav .nav-part-2{
+    width: 25vw;
+    height: auto;
+}
+
+.nav-part-2 img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.nav-part-3{
+    display: flex;
+    gap: 1rem;
+    justify-content: end;
+    font-family: Roboto Mono;
+    align-items: center;
+    width: 33%;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+
+}
+
+.nav-part-3 h3{
+    font-weight: 500;
+    font-family: Roboto-Mono;
+    display: none;
+}
+
+.nav-part-3 .cart-icon{
+    font-size: 1.5rem;
+}
+
+#hero-section{
+    width: 100%;
+    min-height: 85vh;
+    background-image: url(images/hero-bg.webp);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 1.5rem 2rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+#hero-section h1{
+    font-family: "Reckless";
+    font-size: clamp(2.4rem, 5vw, 5rem);
+    color: #201c1a;
+    font-weight: 100;
+    text-align: center;
+}
+
+
+#hero-section p{
+    font-family: "Roboto-Mono";
+    font-size: clamp(0.8rem, 2vw, 1.5rem);
+    color: #201c1a;
+    text-align: center;
+    font-weight: 100;
+}
+
+#hero-section p span{
+    font-weight: bold;
+}
+
+#hero-section button{
+    width: 95%;
+    padding: 1.2rem;
+    background-color: #2A2857;
+    color:#ffffff;
+    font-family: "Roboto-Mono";
+    font-size: 1.2rem;
+    border-radius: 2rem;
+    border: none;
+}
+
+
+@media (min-width:768px) {
+    
+}
+
+@media (min-width:1024px) {
+    .nav-part-1 h3{
+    font-size: 1.5rem;
+    font-weight: 400;
+    display: block ;
+}
+
+.nav-part-1{
+    width: 60%;
+}
+
+
+nav #menu-icon{
+    font-size: 1.5rem;
+    width:33%;
+    display: none;
+}
+
+.nav-part-3 h3{
+    font-weight: 500;
+    font-family: Roboto-Mono;
+    display: block;
+    white-space: nowrap;
+}
+
+nav .nav-part-2{
+    width: 6%;
+}
+
+.nav-part-3{
+    width: 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+
+#hero-section{
+    width: 100%;
+    min-height: 85vh;
+    background-image: url(./images/hero-bg.webp);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 1.5rem 2rem;
+    align-items: start;
+    gap: 1rem;
+}
+
+
+#hero-section h1{
+    font-family: "Reckless";
+    color: #201c1a;
+    font-weight: 100;
+    text-align: start;
+}
+
+#hero-section p{
+    font-family: "Roboto-Mono";
+    font-size: clamp(0.8rem, 2vw, 1.5rem);
+    color: #201c1a;
+    text-align: start;
+    font-weight: 100;
+}
+
+#hero-section button{
+    width: 20vw;
+    padding: 1.2rem;
+    background-color: #2A2857;
+    color:#ffffff;
+    font-family: "Roboto-Mono";
+    font-size: 1.2rem;
+    border-radius: 2rem;
+    border: none;
+}
+}
