@@ -144,7 +144,8 @@ nav .nav-part-2{
 #product-section{
     width: 100%;
     height: 100%;
-    padding: 8rem 1rem;
+    padding: 7rem 1rem;
+    border-bottom:2px solid black ;
 }
 
 .product-txt{
@@ -212,6 +213,7 @@ nav .nav-part-2{
 .card img{
     width: 100%;
     height: 80%;
+    top: 2rem;
     object-fit: fit;
     position: absolute;
 }
@@ -287,10 +289,205 @@ nav .nav-part-2{
     background-color: #2B2957;
     color: #ffffff;
     padding: 0.8rem 3.5rem;
-    font-size: clamp(1.2rem, 4vw , 2rem);
+    font-size: clamp(1.2rem, 4vw , 1.4rem);
     border-radius: 1.5rem;
+    border: none;
 }
 
+#product-des{
+    padding: 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 2rem;
+}
+
+#product-des #start-btn{
+    align-self: self-start;
+    padding: 0.01rem 0.2rem;
+    font-family: "midnight";
+    font-weight: 600;
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    background-color: #fd7f32; 
+    border-radius: 0.5rem;
+    rotate: -2deg;
+    letter-spacing: 0.01rem;
+}
+
+#product-des h1{
+    font-family: "figtree", sans-serif;
+    font-weight: lighter;
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    opacity: 0.8;
+    letter-spacing: -1px;
+}
+
+#product-des input{
+    width: 100%;
+    padding: 1.5rem 1rem;
+    border-radius: 0.8rem;
+    font-size: clamp(1.8rem,4vw,1.8rem);
+    color: #dadada;
+    background: transparent;
+}
+
+#product-des p{
+    font-family: "figtree", sans-serif;
+    font-weight: 100;
+    font-size: clamp(0.5rem,4vw,1rem);
+}
+
+
+.tea-btn{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.tea-btn span{
+    display: inline-block;
+    padding: 0.4rem 1.4rem;
+    border: 1px solid #1f1f1f;
+    border-radius: 0.5rem;
+    background-color: #d9e6ff;
+    font-family: "Reckless";
+    font-size: clamp(1.8rem,4vw,1rem);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.vibe-tags span:hover {
+    background-color: #c5d8ff;
+}
+
+#reviews{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 1rem 1rem;
+    gap: 3rem;
+}
+
+#review-btn{
+    padding: 0.3rem 0.2rem;
+    font-family: "midnight";
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    background-color: #DAAEEA;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    rotate: -2deg;
+    letter-spacing: 0.04rem;
+}
+
+.card-r-container{
+    width: 100%;
+    display: flex;
+    gap: 0.3rem;
+    overflow-x: auto;
+    
+}
+.card-review{
+    width: 100%;
+    height: 65vh;
+    border: 1px solid black;
+    border-radius: 0.7rem;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5af8b;
+    flex-shrink: 0;
+}
+
+.top-r-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.top-r-txt h1{
+    padding: 2rem 0 0 1rem;
+    font-family: "Reckless";
+    font-weight: 100;
+    text-align: center;
+    font-size: clamp(1.5rem,4vw,1.8rem);
+}
+
+.top-r-txt p{
+    padding: 1rem 0 0 1rem;
+    font-size: clamp(1rem,4vw,1,2rem);
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+
+.btm-r-txt{
+    width: 85vw;
+    height: 40%;
+    background-color: #eb6d44;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0 1rem;
+    border-radius: 0.8rem;
+    border: 1px solid black;
+}
+
+.btm-r-txt h3{
+    padding: 0 0.3rem;
+    color: #ffffff;
+    font-family: "Roboto Mono";
+    font-weight: 100;
+    font-size: clamp(0.4rem,4vw,1.2rem);
+}
+
+
+.btm-r-txt img{
+    width: 100%;
+    height: 80%;
+    object-fit: fill;
+}
+
+.btm-r-txt button{
+    padding: 0.9rem 0.8rem;
+    background-color: #ffffff;
+    font-family: "figtree", sans-serif;
+    border-radius: 1.5rem;
+    font-size: clamp(1rem,3vw,1.4rem);
+}
+
+.footer-sec{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 1rem;
+    background-color: #c1dbff;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.8rem;
+    padding: 1rem 1rem;
+    border-radius: 0.5rem;
+    background-color: #2a2857;
+}
+
+.links h2 {
+    font-size: clamp(1.3rem,4vw,1.5rem);
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+.links h3{
+    font-size: clamp(1rem,4vw,0.8rem);
+    color: #dadada;
+    opacity: 0.5;
+}
 @media (min-width:768px) {
     
 }
@@ -410,6 +607,60 @@ nav{
     justify-content: space-between;
     flex-shrink: 0;
     overflow: hidden;
+}
+
+
+#product-des{
+    padding: 5rem 16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 2rem;
+}
+
+
+#product-des h1{
+    width: 90%;
+    text-align: start;
+}
+
+#product-des input{
+    width: 40%;
+    align-content: start;
+}
+
+.card-review{
+    width: 30%;
+}
+
+.btm-r-txt{
+    width: 100%;
+}
+
+#reviews{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.8rem;
+    padding: 2rem 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #2a2857;
+}
+
+.footer-sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1.5rem;
+    background-color: #c1dbff;
 }
 
 }
