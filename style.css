@@ -161,7 +161,7 @@ nav .nav-part-2{
     text-align: center;
 }
 
-#product-section button {
+#product-section #top-btn {
     padding: 0.1rem 0.2rem;
     font-family: "midnight";
     font-size: 2.5rem;
@@ -172,6 +172,58 @@ nav .nav-part-2{
     letter-spacing: 0.04rem;
 }
 
+
+.card-section{
+    width: 100%;
+    padding: 2rem 1rem;
+}
+
+.card{
+    width: 95%;
+    height: 55vh;
+    background-color: #C1EE91;
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+
+.card img{
+    width: 100%;
+    height: 55%;
+    object-fit: cover;
+}
+
+.card-top-txt{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+}
+
+.card-top-txt button{
+    font-size: 1.3rem;
+    font-family: "midnight";
+    padding: 0.3rem 0.3rem;
+    letter-spacing: 0.02rem;
+}
+
+.card-btm-txt{
+    display: flex;
+    flex-direction: column;
+    align-items:end;
+    align-content: center;
+    padding: 0.4rem 1.5rem;
+}
+
+.card-btm-txt #add-btn{
+    padding: 0.3rem 0.6rem;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    background-color: #FFFFFF;
+}
+
+.card-btm-txt #add-btn i{
+    font-size: 1.5rem;
+    padding: 0rem 0.5rem;
+}
 
 @media (min-width:768px) {
     
